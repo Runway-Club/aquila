@@ -13,6 +13,7 @@ import (
 )
 
 func TestCreateNewContainer(t *testing.T) {
+
 	// Create a Docker client
 	cli, err := client.NewClientWithOpts(client.FromEnv, client.WithAPIVersionNegotiation())
 	if err != nil {
